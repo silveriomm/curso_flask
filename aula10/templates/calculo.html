@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Resultado</title>
+</head>
+<body>
+	<h2>Total: {{ total }}</h2>
+	<h4>Situação do aluno</h4>
+	<hr>
+	{% if total >= 60 %}
+		<p>Aprovado</p>
+	{% elif total >= 40 %}
+		<p>Recuperação</p>
+	{% else %}
+		<p>Reprovado</p>
+	{% endif %}
+	<hr>
+</body>
+</html>

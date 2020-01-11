@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Index</title>
+</head>
+<body>
+	<h1>Bem-vindo!</h1>
+	{# Comentário jinja2 #}
+	<p>5 + 8 = {{ 5+8 }}</p>
+	<p>Valor de X: {{x}} Valor de Y: {{y}}</p>
+	<p>X + Y = {{x+y}}</p>
+	<p>X é maior ou igual a 50?</p>
+	{% if x >= 50 %}
+		<p>Verdadeiro!</p>
+	{% else %}
+		<p>Falso!</p>
+	{% endif %}
+	<hr>
+	<table>
+		<!-- passe como argumento na url os valor de k e v -->
+		<!-- Exemplo: /?Nome=Maria&idade=45&cor=branca&profissao=medica -->
+		{% for k, v in query.items() %}
+		<tr>
+			<th>{{ k }}</th>
+			<td>{{ v }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

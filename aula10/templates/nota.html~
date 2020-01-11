@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Notas do aluno</title>
+</head>
+<body>
+	<h1>Boletim</h1>
+	<form action="http://127.0.01:5000/calculo" method="POST">
+		{% for x in range(4) %}
+		<label>Nota: {{x+1}}</label>
+			<p><input type="number" min="0" max="10" name="nota{{x}}" id="nota{{x}}" placeholder="Nota {{x}}" required="true"></p>
+		{% endfor %}
+		<p>
+			<button type="submit">Enviar</button>
+		</p>
+	</form>
+</body>
+</html>

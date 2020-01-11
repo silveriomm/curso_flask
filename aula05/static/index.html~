@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Index</title>
+	<link style="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Cadastro</h1>
+<form action="http://127.0.0.0.1/add" method="POST">
+	<input type="text" name="nome" id="nome" placeholder="Digite o nome...">
+	<br><button type="submit">Enviar</button>
+</form>
+</body>
+</html>
