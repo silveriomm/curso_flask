@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Upload</title>
+</head>
+<body>
+	<h4>Upload feito com sucesso!</h4>
+	<figure>
+  <img src="../upload/1536691-1366x768-DesktopNexus.com.jpg" alt="Minha Figura">	
+  	<figcaption>Imagem salva</figcaption>
+	</figure>
+	<p>{{foto}}</p>
+</body>
+</html>

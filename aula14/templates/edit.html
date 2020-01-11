@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Alteração de Estudante</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Alteração de estudante</h1>
+	<form action="/edit/{{ estudante.id }}" class="container" method="POST">
+		<div class="row">
+			<div class="col-md-6">
+				<label for="nome">Nome:</label>
+				<input type="text" class="form-control" name="nome" id="nome" value="{{estudante.nome}}">			
+			</div>
+			<div class="col-md-6">
+				<label for="idade">Idade:</label>
+				<input type="text" class="form-control" name="idade" id="idade" value="{{estudante.idade}}">			
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<br><button type="submit" class="btn btn-success">Enviar</button>
+		</div>
+	</form>
+	<hr>
+	<a href="/" >Voltar</a>
+</body>
+</html>

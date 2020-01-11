@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Index</title>
+</head>
+<body>
+	{% if username != '' %}
+		<h3>Username logado: {{username}}</h3>
+		<p>Caso deseje sair: <a href="/logout">Sair</a></p>
+	{% else %}
+		<h3>Você não está logado!</h3>
+		<p>Clique no link para logar: <a href="/login" >Login</a></p>
+	{% endif %}
+</body>
+</html>

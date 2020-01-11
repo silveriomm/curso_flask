@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Cadastro</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+		<div class="col-xs-12">
+			<a href="/add">Adicionar estudante</a>
+		</div>
+			<div class="col-xs-12">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Idade</th>
+							<th>Ações</th>						
+						</tr>					
+					</thead>
+					<tbody>
+						{% for e in estudantes %}
+							<tr>
+								<td>{{e.nome}}</td>
+								<td>{{e.idade}}</td>
+								<td>
+									<a href="/edit/{{e.id}}" >Editar</a>
+									<a href="/delete/{{e.id}}" >Excluir</a>
+								</td>							
+							</tr>
+						{% endfor %}					
+					</tbody>
+				</table>
+			</div>			
+		</div>
+	</div>
+</body>
+</html>

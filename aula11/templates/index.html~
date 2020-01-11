@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Cokies</title>
+</head>
+<body>
+	<form action="/setcockie" method="POST">
+		<p>Digite o conteúdo do cokie</p>
+		<input type="text" name="cockie">
+	</form>
+</body>
+</html>
